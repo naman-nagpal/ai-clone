@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"; 
 import Card from "../components/Card";
 import Loader from "../components/Loader";
 import FormField from "../components/FormField";
@@ -25,7 +25,7 @@ const Home = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8080/api/v1/post", {
+      const response = await fetch("https://aiclone.onrender.com/api/v1/post", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
